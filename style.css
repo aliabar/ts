@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;   
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+nav{
+    background-color:white;
+    position: fixed;
+    width: 100%;
+height: 70px;    padding-top: 10px;
+padding-right: 30px;
+padding-left: 30px;
+display: flex;
+justify-content: space-between;
+top: 0;
+left: 0;
+padding-bottom: 10px;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    width: 50%;
+   
+}
+ul li a{
+    padding: 12px 16px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+ul li a:hover{
+    background-color: black;
+    color: white;
+}
+.xe{
+    font-size: 37px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    margin-top: -12px;
+    display: none;
+}
+ul .xe:hover{
+    color: rgb(226, 19, 19);
+    
+}
+#openNav{
+    font-size: 25px;
+    padding: 12px 16px;
+    display: none;
+}
+@media screen and (max-width : 480px){
+
+    ul{
+        height: 100%;
+        width: 0%;
+        display: block;
+        position: fixed;
+        top: -16px;
+        left: -41px;
+        overflow: hidden;
+        background-color: #f2f2f2;margin-bottom: 49px;
+       
+    }
+    ul li a{
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+        padding: 8px 8px 8px 32px;
+        display: block;
+        border-radius:2px ;
+        margin: 17px 0px;
+        border-bottom: 2px #b4a5a5 solid;
+        transition:0.5 ;
+        -webkit-transition:0.5 ;
+        -moz-transition:0.5 ;
+        -ms-transition:0.5 ;
+        -o-transition:0.5 ;
+}
+    .xe{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 220px;
+        padding-top: 7px;
+        
+    }
+    #openNav{
+        display: block;
+    }
+    ul li a:hover{
+margin-left: 40px;
+
+
+}
+
+}
